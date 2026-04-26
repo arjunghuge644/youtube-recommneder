@@ -36,7 +36,7 @@ async function searchVideos() {
   container.innerHTML = skeletonHTML();
 
   try {
-    const res = await fetch(`http://127.0.0.1:5000/search/${query}`);
+    const res = await fetch(`https://youtube-recommneder.onrender.com/`);
     const data = await res.json();
 
     displayVideos(data.items);
